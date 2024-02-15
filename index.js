@@ -17,11 +17,11 @@ sidebarBtn.addEventListener("click", () => {
     if (numberOfClicks % 2 === 0 || numberOfClicks === 0) {
         sideBar.style.transform = "translateY(-280px)";
         homeContent.style.transform = "translateY(0px)";
+        homeContent.style.opacity = "1";
     } else {
         sidebarBtn.style.alignSelf = "flex-start";
         sideBar.style.transform = "translateY(20px)";
-        homeContent.style.transform = "translateY(100px)";
+        homeContent.style.opacity = "0";
         homeContent.style.transition = ".6s all ease-in-out";
     }
-
 })

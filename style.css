@@ -7,14 +7,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 /* THE FIRST WEBPAGE OF THE WEBSITE */
 .home-page {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: #002339;
+    background: white;
 }
 
 .home-page .nav-bar {
+    background-color: white;
     width: 100%;
     height: 10%;
     display: flex;
@@ -38,8 +44,8 @@
 
 .home-page .nav-bar nav ul li a {
     padding: 0px 30px;
-    font-size: 18px;
-    color: white;
+    font-size: 16px;
+    color: black;
     text-decoration: none;
     text-transform: capitalize;
     transition: .4s all ease-in-out;
@@ -53,7 +59,7 @@
     display: none;
     background: transparent;
     border: none;
-    color: white;
+    color: black;
     margin-right: 10px;
     font-size: 20px;
     cursor: pointer;
@@ -71,6 +77,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .home-content h1 {
@@ -79,17 +86,93 @@
 }
 
 #my-name {
-    color: rgba(255, 255, 255, 0.638);
+    color: orangered;
 }
 
 .home-content p {
     font-size: 22px;
     color: orangered;
+    font-style: italic;
+}
+
+/* THE SECOND WEBPAGE OF THE WEBSITE */
+.services-page {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services-page h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: black;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.services-page .underline {
+    width: 120px;
+    height: 3px;
+    background-color: orangered;
+}
+
+.services-page .my-services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.services-page .my-services .service {
+    position: relative;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 450px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(210, 198, 198);
+    transition: 0.8s all ease-in-out;
+}
+
+.services-page .my-services .service #service-icon {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: black;
+}
+
+.services-page .my-services .service h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 400;
+    /*color: orangered;*/
+}
+
+.services-page .my-services .service p {
+    font-size: 16px;
+    margin: 0px 20px;
+}
+
+.services-page .my-services .service:hover {
+    background-color: orangered;
+    color: white;
 }
 
 
 /*MEDIA QUERY FOR MOBILE DEVICES*/
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
     /*FIRST WEBPAGE OF THE WEBSITE*/
     .home-page {
@@ -120,27 +203,33 @@
         transition: .6s all ease-in-out;
     }
 
+    .home-page .nav-bar nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
     .home-page .nav-bar nav ul li {
         display: block;
         padding: 25px 0px;
     }
 
     .home-page .nav-bar nav ul li a {
-        font-size: 18px;
-        color: white;
+        font-size: 16px;
         text-decoration: none;
         text-transform: capitalize;
         transition: .4s all ease-in-out;
     }
 
     .home-page .nav-bar nav ul li a:hover {
-        padding-left: 26px;
+        padding-left: 32px;
     }
 
     .home-page .nav-bar button {
         display: block;
         background: transparent;
         align-self: flex-start;
+        margin-top: 4px;
+        margin-right: 25px;
     }
 
     .home-content {
@@ -155,6 +244,139 @@
 
     .home-content h1 {
         font-size: 2.5rem
+    }
+
+
+    /*SECOND WEBPAGE OF THE WEBSITE*/
+    .services-page h2 {
+        font-size: 28px;
+    }
+
+    .services-page .underline {
+        width: 100px;
+        height: 4px;
+        background-color: orangered;
+    }
+
+    .services-page .my-services {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-page .my-services .service {
+        width: 70%;
+    }
+
+}
+
+/*MEDIA QUERY FOR TABLET SCREENS*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /*FIRST WEBPAGE OF THE WEBSITE*/
+    .home-page {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .home-page .nav-bar {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-page .nav-bar header {
+        font-size: 16px;
+        align-self: flex-start;
+        margin-left: 12px;
+        margin-top: 4px;
+    }
+
+    .home-page .nav-bar nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-280px);
+        width: 50%;
+        align-self: flex-end;
+        transition: .6s all ease-in-out;
+    }
+
+    .home-page .nav-bar nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-page .nav-bar nav ul li {
+        display: block;
+        padding: 25px 0px;
+    }
+
+    .home-page .nav-bar nav ul li a {
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .4s all ease-in-out;
+    }
+
+    .home-page .nav-bar nav ul li a:hover {
+        padding-left: 32px;
+    }
+
+    .home-page .nav-bar button {
+        display: block;
+        background: transparent;
+        align-self: flex-start;
+        margin-right: 25px;
+        margin-top: 4px;
+    }
+
+    .home-content {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem
+    }
+
+    /*SECOND WEBPAGE OF THE WEBPAGE*/
+    .services-page h2 {
+        font-size: 30px;
+    }
+
+    .services-page .my-services {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .services-page .my-services .service {
+        width: 30%;
+    }
+
+    .services-page .my-services .service #service-icon {
+        font-size: 40px;
+    }
+
+    .services-page .my-services .service h3 {
+        font-size: 25px;
+    }
+
+    .services-page .my-services .service p {
+        font-size: 14px;
     }
 
 }
