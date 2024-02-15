@@ -98,7 +98,7 @@ body {
 /* THE SECOND WEBPAGE OF THE WEBSITE */
 .services-page {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
