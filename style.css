@@ -29,9 +29,10 @@ body {
 }
 
 .home-page .nav-bar header {
-    font-size: 20px;
+    font-size: 26px;
     color: orangered;
-    padding-left: 5px;
+    padding-left: 15px;
+    font-weight: 400;
 }
 
 .home-page .nav-bar nav ul {
@@ -96,6 +97,78 @@ body {
 }
 
 /* THE SECOND WEBPAGE OF THE WEBSITE */
+.about-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-page .my-image {
+    height: 370px;
+    width: 370px;
+    border-radius: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.672);
+    transition: .6s all ease-in-out;
+}
+
+.about-page .my-image:hover {
+    border: 1px solid orangered;
+}
+
+.about-page .about-description {
+    height: 75%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    /*border: 1px solid black;*/
+}
+
+.about-page .about-description header {
+    font-size: 45px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: orangered;
+}
+
+.about-page .about-description p {
+    font-size: 18px;
+    width: 80%;
+}
+
+.about-page .about-description h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: orangered;
+}
+
+.about-page .about-description .tech-stack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    height: 100px;
+}
+
+.about-page .about-description .tech-stack i {
+    font-size: 80px;
+    background: transparent;
+    transition: .6s all ease;
+    cursor: pointer;
+}
+
+.about-page .about-description .tech-stack i:hover {
+    scale: 1.1;
+}
+
+
+
+/* THE THIRD WEBPAGE OF THE WEBSITE */
 .services-page {
     width: 100%;
     height: 100vh;
@@ -157,7 +230,6 @@ body {
     font-size: 24px;
     text-transform: capitalize;
     font-weight: 400;
-    /*color: orangered;*/
 }
 
 .services-page .my-services .service p {
@@ -190,6 +262,7 @@ body {
 
     .home-page .nav-bar header {
         font-size: 16px;
+        padding-left: 6px;
         align-self: flex-start;
     }
 
@@ -229,7 +302,7 @@ body {
         background: transparent;
         align-self: flex-start;
         margin-top: 4px;
-        margin-right: 25px;
+        margin-right: 22px;
     }
 
     .home-content {
@@ -246,8 +319,75 @@ body {
         font-size: 2.5rem
     }
 
-
     /*SECOND WEBPAGE OF THE WEBSITE*/
+    .about-page {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-page .my-image {
+        height: 280px;
+        width: 280px;
+        border-radius: 100%;
+        margin-top: 4px;
+        border: 1px solid rgba(128, 128, 128, 0.672);
+        transition: .6s all ease-in-out;
+    }
+
+    .about-page .my-image:hover {
+        border: 1px solid orangered;
+    }
+
+    .about-page .about-description {
+        height: 75%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-page .about-description header {
+        font-size: 35px;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        color: orangered;
+    }
+
+    .about-page .about-description p {
+        font-size: 16px;
+        width: 80%;
+        text-align: center;
+
+    }
+
+    .about-page .about-description h2 {
+        font-size: 30px;
+        text-transform: capitalize;
+        font-weight: 300;
+        color: orangered;
+    }
+
+    .about-page .about-description .tech-stack {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: fit-content;
+        height: 100px;
+    }
+
+    .about-page .about-description .tech-stack i {
+        font-size: 80px;
+        background: transparent;
+    }
+
+
+    /*THIRD WEBPAGE OF THE WEBSITE*/
     .services-page h2 {
         font-size: 28px;
     }
@@ -291,9 +431,9 @@ body {
     }
 
     .home-page .nav-bar header {
-        font-size: 16px;
+        font-size: 24px;
         align-self: flex-start;
-        margin-left: 12px;
+        padding-left: 6px;
         margin-top: 4px;
     }
 
@@ -350,7 +490,83 @@ body {
         font-size: 2.5rem
     }
 
-    /*SECOND WEBPAGE OF THE WEBPAGE*/
+    /*SECOND WEBPAGE OF THE WEBSITE*/
+    .about-page {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-page .my-image {
+        height: 320px;
+        width: 320px;
+        border-radius: 100%;
+        margin-top: 4px;
+        border: 1px solid rgba(128, 128, 128, 0.672);
+        transition: .6s all ease-in-out;
+    }
+
+    .about-page .my-image:hover {
+        border: 1px solid orangered;
+    }
+
+    .about-page .about-description {
+        height: 75%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-page .about-description header {
+        font-size: 45px;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        color: orangered;
+    }
+
+    .about-page .about-description p {
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
+
+    }
+
+    .about-page .about-description h2 {
+        font-size: 35px;
+        text-transform: capitalize;
+        font-weight: 300;
+        color: orangered;
+    }
+
+    .about-page .about-description .tech-stack {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: fit-content;
+        height: 100px;
+    }
+
+    .about-page .about-description .tech-stack i {
+        font-size: 80px;
+        background: transparent;
+    }
+
+    /*THIRD WEBPAGE OF THE WEBPAGE*/
+    .services-page {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .services-page h2 {
         font-size: 30px;
     }
