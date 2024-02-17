@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -30,6 +34,7 @@ body {
 
 .home-page .nav-bar header {
     font-size: 26px;
+    font-weight: bold;
     color: orangered;
     padding-left: 15px;
     font-weight: 400;
@@ -105,16 +110,9 @@ body {
     align-items: center;
 }
 
-.about-page .my-image {
-    height: 370px;
-    width: 370px;
-    border-radius: 100%;
-    border: 1px solid rgba(128, 128, 128, 0.672);
-    transition: .6s all ease-in-out;
-}
-
-.about-page .my-image:hover {
-    border: 1px solid orangered;
+.about-page .about-image .my-image {
+    height: 450px;
+    width: 350px;
 }
 
 .about-page .about-description {
@@ -124,7 +122,6 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
-    /*border: 1px solid black;*/
 }
 
 .about-page .about-description header {
@@ -261,7 +258,7 @@ body {
     }
 
     .home-page .nav-bar header {
-        font-size: 16px;
+        font-size: 18px;
         padding-left: 6px;
         align-self: flex-start;
     }
@@ -302,7 +299,7 @@ body {
         background: transparent;
         align-self: flex-start;
         margin-top: 4px;
-        margin-right: 22px;
+        margin-right: 4px;
     }
 
     .home-content {
@@ -322,24 +319,23 @@ body {
     /*SECOND WEBPAGE OF THE WEBSITE*/
     .about-page {
         width: 100%;
-        height: 100vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .about-page .my-image {
-        height: 280px;
-        width: 280px;
-        border-radius: 100%;
-        margin-top: 4px;
-        border: 1px solid rgba(128, 128, 128, 0.672);
-        transition: .6s all ease-in-out;
+    .about-page .about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .about-page .my-image:hover {
-        border: 1px solid orangered;
+    .about-page .about-image .my-image {
+        height: 390px;
+        width: 320px;
     }
 
     .about-page .about-description {
@@ -349,6 +345,9 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        padding-left: 0px;
     }
 
     .about-page .about-description header {
@@ -360,7 +359,7 @@ body {
 
     .about-page .about-description p {
         font-size: 16px;
-        width: 80%;
+        width: 70%;
         text-align: center;
 
     }
@@ -472,7 +471,7 @@ body {
         display: block;
         background: transparent;
         align-self: flex-start;
-        margin-right: 25px;
+        margin-right: 4px;
         margin-top: 4px;
     }
 
@@ -500,17 +499,16 @@ body {
         align-items: center;
     }
 
-    .about-page .my-image {
-        height: 320px;
-        width: 320px;
-        border-radius: 100%;
-        margin-top: 4px;
-        border: 1px solid rgba(128, 128, 128, 0.672);
-        transition: .6s all ease-in-out;
+    .about-page .about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .about-page .my-image:hover {
-        border: 1px solid orangered;
+    .about-page .about-image .my-image {
+        height: 430px;
+        width: 340px;
     }
 
     .about-page .about-description {
@@ -520,6 +518,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 0px;
     }
 
     .about-page .about-description header {
