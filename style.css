@@ -111,8 +111,8 @@ body {
 }
 
 .about-page .about-image .my-image {
-    height: 450px;
-    width: 350px;
+    height: 480px;
+    width: 355px;
 }
 
 .about-page .about-description {
@@ -319,7 +319,7 @@ body {
     /*SECOND WEBPAGE OF THE WEBSITE*/
     .about-page {
         width: 100%;
-        height: fit-content;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -334,8 +334,8 @@ body {
     }
 
     .about-page .about-image .my-image {
-        height: 390px;
-        width: 320px;
+        height: 400px;
+        width: 300px;
     }
 
     .about-page .about-description {
@@ -381,7 +381,7 @@ body {
     }
 
     .about-page .about-description .tech-stack i {
-        font-size: 80px;
+        font-size: 45px;
         background: transparent;
     }
 
@@ -391,11 +391,13 @@ body {
         font-size: 28px;
     }
 
+
     .services-page .underline {
-        width: 100px;
+        width: 80px;
         height: 4px;
         background-color: orangered;
     }
+
 
     .services-page .my-services {
         width: 100vw;
@@ -492,7 +494,7 @@ body {
     /*SECOND WEBPAGE OF THE WEBSITE*/
     .about-page {
         width: 100%;
-        height: 100vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -522,7 +524,7 @@ body {
     }
 
     .about-page .about-description header {
-        font-size: 45px;
+        font-size: 35px;
         margin-bottom: 5px;
         text-transform: capitalize;
         color: orangered;
@@ -536,7 +538,7 @@ body {
     }
 
     .about-page .about-description h2 {
-        font-size: 35px;
+        font-size: 30px;
         text-transform: capitalize;
         font-weight: 300;
         color: orangered;
@@ -549,21 +551,24 @@ body {
         gap: 20px;
         width: fit-content;
         height: 100px;
+        margin-bottom: 5px;
     }
 
     .about-page .about-description .tech-stack i {
-        font-size: 80px;
+        font-size: 60px;
         background: transparent;
     }
 
     /*THIRD WEBPAGE OF THE WEBPAGE*/
     .services-page {
         width: 100vw;
-        height: 100vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 7px;
+        border: 1px solid black;
     }
 
     .services-page h2 {
@@ -573,25 +578,27 @@ body {
     .services-page .my-services {
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 10px;
         margin-top: 20px;
     }
 
     .services-page .my-services .service {
-        width: 30%;
+        width: 45%;
     }
 
     .services-page .my-services .service #service-icon {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .services-page .my-services .service h3 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .services-page .my-services .service p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
 }
