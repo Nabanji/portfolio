@@ -264,10 +264,10 @@ body {
     }
 
     .home-page .nav-bar nav {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
-        transform: translateY(-280px);
+        transform: translateY(-370px);
         width: 50%;
         align-self: flex-end;
         transition: .6s all ease-in-out;
@@ -304,7 +304,7 @@ body {
 
     .home-content {
         width: 100%;
-        height: fit-content;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -439,10 +439,10 @@ body {
     }
 
     .home-page .nav-bar nav {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
-        transform: translateY(-280px);
+        transform: translateY(-370px);
         width: 50%;
         align-self: flex-end;
         transition: .6s all ease-in-out;
@@ -479,7 +479,7 @@ body {
 
     .home-content {
         width: 100%;
-        height: fit-content;
+        height: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -568,7 +568,6 @@ body {
         justify-content: center;
         align-items: center;
         margin-top: 7px;
-        border: 1px solid black;
     }
 
     .services-page h2 {
